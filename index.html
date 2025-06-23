@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" placeholder="Enter location" id="location-input">
+            <button id="search-btn">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <div class="weather-info">
+            <div class="location">
+                <h2 id="city">Weather App</h2>
+                <p id="country"></p>
+            </div>
+            <div class="weather-details">
+                <img src="" alt="weather icon" id="weather-icon">
+                <h1 id="temperature"></h1>
+                <div class="temp-range">
+                    <span class="max-temp">High: <span id="max-temp"></span></span>
+                    <span class="min-temp">Low: <span id="min-temp"></span></span>
+                </div>
+                <p id="description"></p>
+            </div>
+            <div class="additional-info">
+                <div class="info">
+                    <i class="fas fa-tint"></i>
+                    <div>
+                        <p>Humidity</p>
+                        <p id="humidity"></p>
+                    </div>
+                </div>
+                <div class="info">
+                    <i class="fas fa-wind"></i>
+                    <div>
+                        <p>Wind Speed</p>
+                        <p id="wind-speed"></p>
+                    </div>
+                </div>
+                <div class="info">
+                    <i class="fas fa-leaf"></i>
+                    <div>
+                        <p>Air Quality</p>
+                        <p id="aqi"></p>
+                        <p id="aqi-text" class="aqi-description"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
